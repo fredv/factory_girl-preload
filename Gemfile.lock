@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     factory_girl-preload (2.0.2)
-      factory_girl (>= 3.0)
+      factory_girl (~> 3.3)
 
 GEM
   remote: http://rubygems.org/
@@ -25,6 +25,8 @@ GEM
       activesupport (= 3.2.8)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-mysql2-adapter (0.0.3)
+      mysql2
     activesupport (3.2.8)
       i18n (~> 0.6)
       multi_json (~> 1.0)
@@ -32,7 +34,7 @@ GEM
     builder (3.0.4)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    factory_girl (3.6.1)
+    factory_girl (3.6.2)
       activesupport (>= 3.0.0)
     hike (1.2.1)
     i18n (0.6.1)
@@ -84,6 +86,7 @@ PLATFORMS
 DEPENDENCIES
   actionpack
   activerecord
+  activerecord-mysql2-adapter
   factory_girl-preload!
   mysql2
   rspec-rails
